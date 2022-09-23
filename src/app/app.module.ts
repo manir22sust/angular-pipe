@@ -2,15 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppendPipe } from './pipes/append.pipe';
+import { AppendCLIPipe } from './pipes/append-cli.pipe';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, AppendPipe, AppendCLIPipe, SummaryPipe],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
